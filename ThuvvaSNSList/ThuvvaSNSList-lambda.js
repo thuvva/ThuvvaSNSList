@@ -1,6 +1,7 @@
 let AWS = require('aws-sdk');
 const sns = new AWS.SNS();
 exports.handler = function (event, context, callback) {
+	
 
 
 	sns.listSubscriptionsByTopic({
@@ -17,5 +18,9 @@ exports.handler = function (event, context, callback) {
 			// error handling goes here
 		});
 
+
 	//callback(null, 'Successfully executed');
+
+
+
 }
